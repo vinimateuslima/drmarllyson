@@ -1,0 +1,10 @@
+.logo_container {
+padding: 1em 0em;
+background-color: var(--branco);
+border: 1px solid #D9D9D9;
+}
+
+.logo_container img {
+    width: 400px;
+    height: 100px;
+}
