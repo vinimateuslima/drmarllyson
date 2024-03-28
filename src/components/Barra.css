@@ -1,0 +1,29 @@
+.barra {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    height: 79px;
+    color: var(--branco);
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.barra p {
+    margin: 0;
+}
+
+.barra svg {
+    margin-right: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .barra {
+        display: none!important;
+    }
+  }
+
+
+

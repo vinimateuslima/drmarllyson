@@ -1,10 +1,16 @@
 .logo_container {
-padding: 1em 0em;
-background-color: var(--branco);
-border: 1px solid #D9D9D9;
+  background-color: var(--branco);
+  text-align: center;
 }
 
 .logo_container img {
-    width: 400px;
-    height: 100px;
+  width: 300px;
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo_container img {
+    width: 230px;
+    padding: 0.5em;
+  }
 }

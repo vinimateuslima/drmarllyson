@@ -10,3 +10,6 @@
     --cor-terciaria: #BBB6B4;
     --branco: #ffffff;
 }
+.row {
+    --bs-gutter-x: 0!important;
+}

@@ -1,11 +1,21 @@
 import "./Menu.css";
 import { FaWhatsapp } from "react-icons/fa";
 
+import { useState } from "react";
+
 const Menu = () => {
+
+  const [isActive, setIsActive] = useState(false);
+
+  const clicarMenu = () => {
+    setIsActive(!isActive);
+  }
+
   return (
     <>
-      <nav className="menu_principal">
-        <ul>
+      <nav className={isActive ? "menu_principal active" : "menu_principal"}>
+        <button className="hamburguer" onClick={clicarMenu}></button>
+        <ul className="nav-list">
           <li>
             <a href="">Inicio</a>
           </li>

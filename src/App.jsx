@@ -1,14 +1,12 @@
 import {Outlet} from 'react-router-dom'
 
-import Menu from './components/Menu';
-import Logo from './components/Logo';
+import Cabecalho from './components/Cabecalho';
 
 function App() {
 
   return (
     <>
-    <Logo/>
-    <Menu/>
+    <Cabecalho/>
     <Outlet/>
     </>
   );
