@@ -1,0 +1,39 @@
+.card_container {
+  display: flex;
+  flex-direction: column;
+  width: 347px;
+  height: 457px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.card_img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card_body {
+  padding: 1em;
+  color: var(--cor-primaria);
+  height: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card_title {
+  font-weight: 600;
+}
+
+.card_footer {
+    margin-top: 10px;
+  padding: 1em;
+}
+
+.card_button {
+  background-color: var(--cor-primaria);
+  color: var(--branco);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  cursor: pointer;
+}

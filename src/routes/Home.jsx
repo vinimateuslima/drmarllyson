@@ -1,7 +1,14 @@
+import Banner from "../components/Banner";
+
+import Servicos from "../components/Servicos";
+
 const Home = () => {
   return (
-    <h2>Home</h2>
-  )
-}
+    <>
+      <Banner />
+      <Servicos />
+    </>
+  );
+};
 
-export default Home
+export default Home;

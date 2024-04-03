@@ -10,8 +10,6 @@ import Barra from "./Barra";
 
 import BarraMobile from "./BarraMobile";
 
-import Banner from "./Banner";
-
 const Cabecalho = () => {
   return (
     <>
@@ -25,7 +23,6 @@ const Cabecalho = () => {
       </Row>
       <Barra />
       <BarraMobile />
-      <Banner />
     </>
   );
 };
