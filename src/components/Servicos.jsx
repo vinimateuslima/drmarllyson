@@ -2,32 +2,69 @@ import "./Servicos.css";
 
 import Card from "./Card";
 
-const Servicos = () => {
-  return (
-    <section className="servicos">
-      <h2>Servicos</h2>
-      <div className="section_card">
-        <Card
-          title={"Facetas Dentárias"}
-          description={
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat elit. Quisque vitae libero a ante cursus feugiat. Nullam non lacus non diam maximus euismod at eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat elit. Quisque vitae libero a ante cursus feugiat. Nullam non lacus non diam maximus euismod at eget sapien."
-          }
-        />
-        <Card
-          title={"Facetas Dentárias"}
-          description={
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat elit. Quisque vitae libero a ante cursus feugiat. Nullam non lacus non diam maximus euismod at eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat elit. Quisque vitae libero a ante cursus feugiat. Nullam non lacus non diam maximus euismod at eget sapien."
-          }
-        />
+// import required modules
+import { Pagination } from "swiper/modules";
 
-        <Card
-          title={"Facetas Dentárias"}
-          description={
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat elit. Quisque vitae libero a ante cursus feugiat. Nullam non lacus non diam maximus euismod at eget sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat elit. Quisque vitae libero a ante cursus feugiat. Nullam non lacus non diam maximus euismod at eget sapien."
-          }
-        />
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+// Gerar importação da imagem
+import { getImageURL } from "./getImageURL";
+import { useEffect, useState } from "react";
+
+const Servicos = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5173/src/assets/data/dataCard.json")
+      .then((response) => response.json())
+      .then(setData);
+  }, []);
+
+  if (!data || !data.length) return null;
+
+  return (
+    <>
+      <div className="carousel">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={80}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {data.map((card) => (
+            <SwiperSlide key={card.id}>
+              <Card
+                title={card.title}
+                description={card.description}
+                src={getImageURL(card.src)}
+                link={card.link}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-    </section>
+    </>
   );
 };
 

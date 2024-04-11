@@ -1,11 +1,13 @@
 import "./Card.css";
 
-import faceta from "../assets/card/facetas.png";
 
-const Card = ({img, title, description, link}) => {
-  return (
+
+const Card = ({src, title, description, link}) => {
+
+
+    return (
     <div className="card_container">
-      <img className="card_img" src={faceta} alt="" />
+      <img className="card_img" src={src} alt="" />
 
       <div className="card_body">
         <h2 className="card_title">{title}</h2>

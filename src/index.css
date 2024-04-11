@@ -17,3 +17,12 @@
 h1 {
     color: var(--cor-primaria);
 }
+
+.btn-secondary {
+    background-color: var(--cor-primaria)!important;
+}
+
+.btn-secondary:hover {
+    filter: brightness(1.1);
+    background-color: var(--cor-primaria);
+  }

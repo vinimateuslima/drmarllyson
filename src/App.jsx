@@ -1,13 +1,12 @@
-import {Outlet} from 'react-router-dom'
+import { Outlet } from "react-router-dom";
 
-import Cabecalho from './components/Cabecalho';
+import Cabecalho from "./components/Cabecalho";
 
 function App() {
-
   return (
     <>
-    <Cabecalho/>
-    <Outlet/>
+      <Cabecalho />
+      <Outlet />
     </>
   );
 }

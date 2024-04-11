@@ -1,0 +1,75 @@
+.marcar_consulta {
+  width: 100%;
+  color: var(--cor-primaria);
+}
+
+.marley2 {
+  width: 70%;
+}
+
+.marcar_consulta_left {
+  text-align: center;
+}
+
+.marcar_consulta .row {
+  padding: 0em 4em;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcar_consulta_right {
+  padding-right: 10em;
+
+}
+
+.marcar_consulta_right h2{
+  padding-bottom: 0.2em;
+
+}
+
+.marcar_consulta_right p {
+  font-size: 0.8em;
+  padding: 0.2em 0em;
+}
+
+.marcar_consulta_right ul {
+  padding: 1em 0em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+}
+
+.marcar_consulta_right ul svg {
+  margin-right: 5px;
+}
+
+.marcar_consulta_right li {
+  list-style: none;
+}
+
+.marcar_consulta Button {
+  width: 70%;
+}
+
+.marcar_consulta Button svg {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+@media (max-width: 992px) {
+  .marcar_consulta_right {
+    text-align: center;
+    padding: 2em 2em; 
+  }
+
+  .marcar_consulta_right ul {
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-row-gap: 1em;
+  }
+
+  .marcar_consulta Button {
+    font-size: 0.7em;
+    width: 100%;
+  }
+}
