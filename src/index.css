@@ -14,8 +14,8 @@
     --bs-gutter-x: 0!important;
 }
 
-h1 {
-    color: var(--cor-primaria);
+h1, h2 {
+    color: var(--cor-primaria)!important;
 }
 
 .btn-secondary {
