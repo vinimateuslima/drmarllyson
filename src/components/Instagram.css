@@ -9,6 +9,8 @@ section.instagram {
     column-gap: 1em;
     row-gap: 1em;
     justify-content: center;
+    max-width: 1400px;
+    width: 100%;
 }
 
 .instagram_grid .caixa {
