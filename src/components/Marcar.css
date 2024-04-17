@@ -57,6 +57,11 @@
 }
 
 @media (max-width: 992px) {
+
+  .marcar_consulta .row {
+    padding: 0em;
+  }
+
   .marcar_consulta_right {
     text-align: center;
     padding: 2em 2em; 
