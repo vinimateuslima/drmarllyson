@@ -1,3 +1,11 @@
-.principal {
-    padding: 0 5em;
+section {
+  padding: 0 5em;
+  min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 0 1em;
+  }
+  
 }

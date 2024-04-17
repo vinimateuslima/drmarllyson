@@ -1,9 +1,14 @@
+section.instagram {
+    margin-bottom: 2em;
+}
+
 .instagram_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 200px;
     column-gap: 1em;
     row-gap: 1em;
+    justify-content: center;
 }
 
 .instagram_grid .caixa {

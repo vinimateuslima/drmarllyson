@@ -8,18 +8,19 @@ import Instagram from "../components/Instagram";
 
 import Contato from "../components/Contato";
 
-import "./Home.css"
+import "./Home.css";
 
 const Home = () => {
   return (
     <>
       <Banner />
       <main className="principal">
-      <Servicos />
-      <Marcar/>
-      <Instagram/>
-      <Contato/>
+        <Servicos />
+        <Marcar />
+        <Instagram />
+        <Contato/>
       </main>
+  
     </>
   );
 };

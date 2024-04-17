@@ -30,7 +30,7 @@ const Servicos = () => {
   if (!data || !data.length) return null;
 
   return (
-    <>
+    <section className="servicos">
       <div className="carousel">
         <Swiper
           slidesPerView={1}
@@ -64,7 +64,7 @@ const Servicos = () => {
           ))}
         </Swiper>
       </div>
-    </>
+    </section>
   );
 };
 
