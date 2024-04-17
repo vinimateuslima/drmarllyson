@@ -8,6 +8,8 @@ import Instagram from "../components/Instagram";
 
 import Contato from "../components/Contato";
 
+import Rodape from "../components/Rodape";
+
 import "./Home.css";
 
 const Home = () => {
@@ -20,7 +22,7 @@ const Home = () => {
         <Instagram />
         <Contato/>
       </main>
-  
+      <Rodape/>
     </>
   );
 };
