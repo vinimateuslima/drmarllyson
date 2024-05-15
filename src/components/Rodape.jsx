@@ -3,7 +3,7 @@ import "./Rodape.css"
 const Rodape = () => {
   return (
     <footer id="rodape">
-        <p>Todos os direitos reservados Vinicius Lima ©</p>
+        <p>Todos os direitos reservados <a href="https://vinilimadev.com/" target="_blank">Vinicius Lima</a> ©</p>
     </footer>
   )
 }

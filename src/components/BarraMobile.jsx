@@ -15,13 +15,12 @@ const BarraMobile = () => {
         </span>
         <span>
           <MdOutlineMailOutline />
-          loremipsum@email.com
+          marllysonrenan@gmail.com
         </span>
         <span>
           <FaRegClock />
           Seg a Sexta 09:00 as 20:00
         </span>
-
       </div>
     </div>
   );

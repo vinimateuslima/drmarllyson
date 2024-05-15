@@ -17,23 +17,23 @@ const Menu = () => {
         <button className="hamburguer" onClick={clicarMenu}></button>
         <ul className="nav-list">
           <li>
-            <a href="">Inicio</a>
+            <a href="#banner">Inicio</a>
           </li>
           <li>
-            <a href="">Serviços</a>
+            <a href="#servicos">Serviços</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#marcar-consulta">Sobre</a>
           </li>
           <li>
-            <a href="">Onde estamos</a>
+            <a href="#contato">Onde estamos</a>
           </li>
           <li>
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
           <li>
-            <FaWhatsapp />
-            (81) 9999-9999
+            <a href="https://wa.me/+5581999275121" target="_blank"><FaWhatsapp />
+            (81) 9927-5121</a>
           </li>
         </ul>
       </nav>

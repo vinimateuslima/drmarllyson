@@ -4,7 +4,7 @@
   background: center / 100% 100% no-repeat url("../assets/img/background.jpg");
   overflow: hidden;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 6em;
 }
 

@@ -8,8 +8,8 @@ import "./Banner.css"
 
 const Banner = () => {
   return (
-    <Row className="banner_container">
-      <Col xs="12" lg="6">
+    <Row id="banner" className="banner_container">
+      <Col xs="12" lg="4">
         <div className="banner_info">
           <h1>Dr Marllyson Renan</h1>
           <p>Cirurgião-Dentista - CRO-PE: 15430</p>
@@ -21,10 +21,12 @@ const Banner = () => {
             dos pacientes.
           </p>
           <div>
+            <a href="https://wa.me/+5581999275121" target="_blank">
             <Button>
               <FaWhatsapp />
               Agende uma avaliação
             </Button>
+            </a>
           </div>
         </div>
       </Col>

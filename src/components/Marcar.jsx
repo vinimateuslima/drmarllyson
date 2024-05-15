@@ -10,7 +10,7 @@ import "./Marcar.css";
 
 const Marcar = () => {
   return (
-    <section className="marcar_consulta">
+    <section id="marcar-consulta" className="marcar_consulta">
       <Row>
         <Col className="marcar_consulta_left" lg="6">
           <img
@@ -22,8 +22,9 @@ const Marcar = () => {
         <Col className="marcar_consulta_right" lg="6">
           <h2>Marque sua consulta</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed
-            feugiat elit. Quisque vitae libero a ante cursus feugiat.{" "}
+            Estamos prontos para cuidar do seu sorriso! <br />
+            Agende agora sua consulta e dê o primeiro passo para conquistar o
+            sorriso dos seus sonhos.
           </p>
           <ul>
             <li>
@@ -43,7 +44,11 @@ const Marcar = () => {
               Facetas dentárias
             </li>
           </ul>
-          <Button> <FaWhatsapp /> Agendar consulta</Button>
+          <a href="https://wa.me/+5581999275121" target="_blank">
+            <Button>
+              <FaWhatsapp /> Agendar consulta
+            </Button>
+          </a>
         </Col>
       </Row>
     </section>

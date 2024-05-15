@@ -15,4 +15,16 @@ section.instagram {
 
 .instagram_grid .caixa {
     background-color: #D9D9D9;
+    position: relative;
+}
+
+.instagram_grid .caixa::before {
+    content: "Em breve";
+    position: absolute;
+    background-color: red;
+    color: yellow;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    transform: rotate(-10deg);
 }

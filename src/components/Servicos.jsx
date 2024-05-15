@@ -22,7 +22,7 @@ const Servicos = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/src/assets/data/dataCard.json")
+    fetch("src/assets/data/dataCard.json")
       .then((response) => response.json())
       .then(setData);
   }, []);
@@ -30,7 +30,7 @@ const Servicos = () => {
   if (!data || !data.length) return null;
 
   return (
-    <section className="servicos">
+    <section id="servicos" className="servicos">
       <div className="carousel">
         <Swiper
           slidesPerView={1}

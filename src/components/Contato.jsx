@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./Contato.css";
 
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 const Contato = () => {
   const [name, setName] = useState("");
@@ -19,7 +19,7 @@ const Contato = () => {
   };
 
   return (
-    <section className="contato">
+    <section id="contato" className="contato">
       <Row>
         <Col className="contato_esquerda" lg="6">
           <h2>Entre em contato conosco!</h2>
