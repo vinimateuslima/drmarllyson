@@ -16,16 +16,34 @@ import "swiper/css/scrollbar";
 
 // Gerar importação da imagem
 import { getImageURL } from "./getImageURL";
-import { useEffect, useState } from "react";
 
 const Servicos = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("https://drmarllyson.vercel.app/src/assets/data/dataCard.json")
-      .then((response) => response.json())
-      .then(setData);
-  }, []);
+  const data = [
+    {
+      id: 1,
+      title: "Facetas Dentárias",
+      src: "facetas.png",
+      description:
+        "Transforme seu sorriso com camadas finas de porcelana ou resina, corrigindo imperfeições para um sorriso deslumbrante!",
+      link: "",
+    },
+    {
+      id: 2,
+      title: "Clareamento",
+      src: "clareamento.png",
+      description:
+        "Recupere o brilho do seu sorriso! Remova manchas e descolorações para um sorriso mais branco e radiante.",
+      link: "",
+    },
+    {
+      id: 3,
+      title: "Próteses Móveis",
+      src: "protese.png",
+      description:
+        " Sorria com confiança! Próteses móveis personalizadas para restaurar a função e a estética dos seus dentes.",
+      link: "",
+    },
+  ];
 
   if (!data || !data.length) return null;
 
