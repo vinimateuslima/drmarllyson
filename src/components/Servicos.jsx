@@ -22,7 +22,7 @@ const Servicos = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("src/assets/data/dataCard.json")
+    fetch("http://localhost:5173/src/assets/data/dataCard.json")
       .then((response) => response.json())
       .then(setData);
   }, []);
