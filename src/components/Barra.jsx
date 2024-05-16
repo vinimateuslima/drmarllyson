@@ -19,7 +19,7 @@ const Barra = () => {
       <Col md="4">
         <p>
           <MdOutlineMailOutline />
-          marllysonrenan@gmail.com
+          drmarllysonrenan13@gmail.com
         </p>
       </Col>
       <Col md="4">

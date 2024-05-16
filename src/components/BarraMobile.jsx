@@ -15,7 +15,7 @@ const BarraMobile = () => {
         </span>
         <span>
           <MdOutlineMailOutline />
-          marllysonrenan@gmail.com
+          drmarllysonrenan13@gmail.com
         </span>
         <span>
           <FaRegClock />
